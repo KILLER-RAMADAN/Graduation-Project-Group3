@@ -1,0 +1,296 @@
+Requirement ID,TC_ID,TC Title/ Objective ,Test Case,Teast Data,Expected Result,Status,Attachment,Environment
+Login_ParaBank registration_001,ParaBank_TC_001,"Verify that the system accepts all data as the requirments needs
+","1-Open the login page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""log in"" button.","Username: saranabiill2345
+Password: sara@4569
+Confirm password: sara@4569","The system should accept the fields.
+The user should be navigated to the next page.",APPROVED,,
+Login_ParaBank registration_001,ParaBank_TC_002,"Verify that the system shows an error when the username field is left blank
+","1-Open the login page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""log in"" button.","Username: (blank)
+Password: sara@4569
+Confirm password: sara@4569","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Login_ParaBank registration_001,ParaBank_TC_003,"Verify that the system shows an error when the username is longer than 15 characters
+","1-Open the login page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""log in"" button.","Username: saranabilaliramadan
+Password: sara@4569
+Confirm password: sara@4569","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Login_ParaBank registration_001,ParaBank_TC_004,"Verify that the system shows an error when the username contains special characters
+","1-Open the login page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""log in"" button.","Username: sara@456
+Password: sara@4569
+Confirm password: sara@4569","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Login_ParaBank registration_001,ParaBank_TC_005,"Verify that the system shows an error when the username is not unique (already exists)
+","1-Open the login page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""log in"" button.","Username: saraaa
+Password: sara@456
+Confirm password: sara@456","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Login_ParaBank registration_001,ParaBank_TC_006,"Verify that the system shows an error when the password field is left blank
+","1-Open the login page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""log in"" button.","Username: saranabil
+Password: (blank)
+Confirm password: (blank)","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Login_ParaBank registration_001,ParaBank_TC_007,"Verify that the system shows an error when the password is less than 8 characters
+","1-Open the login page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""log in"" button.","Username: saranabil
+Password: nabil
+Confirm password: nabil","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Login_ParaBank registration_001,ParaBank_TC_008,Verify that the system accepts a valid password with 8 or more characters,"1-Open the login page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""log in"" button.","Username: saranabil
+Password: sara@45678
+Confirm Password: sara@45678","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Login_ParaBank registration_001,ParaBank_TC_009,"Verify that the system shows an error when the password and confirm password do not excatly match
+","1-Open the login page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""log in"" button.","Username: saranabil
+Password: sara@45678
+confirm password: sara45678","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Login_ParaBank registration_001,ParaBank_TC_010,"Verify that the system shows an error when the confirm password field is left blank
+","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: saranabil
+Password: sara@45678
+confirm password: (blank)","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Login_ParaBank registration_001,ParaBank_TC_011,"Verify that the system accepts matching password and confirm password fields
+","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: saranabil
+Password: sara@45678
+confirm password: sara@45678","The system should accept the fields.
+The user should be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_012,Verify that the system accepts the required fields as mentioned in the requirments With blank State field as it is optional,"1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","First Name: Sara
+Last Name: Nabil
+Address: 5 mohamed farag st
+City: Cairo
+State: (blank)
+Zip Code: 3526565
+Phone #: 01093567416
+SSN: 009678543
+ ","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,"Windows 11
+Chrome 3.6 / Fire "
+Req_ParaBank registration_002,ParaBank_TC_013,"Verify that the system shouldn't accept the valid required fields as mentioned in the requirments
+when the First Name and Last name with more than 50 characters ","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","First Name: Sara mohamed Nabil Ali Ramadan Mohamed Nabil Ali Ramadan Mohamed
+Last Name: Sara mohamed Nabil Ali Ramadan Mohamed Nabil Ali Ramadan Mohamed
+Address: 5 mohamed farag st
+City: Cairo
+State: (blank)
+Zip Code: 3526565
+Phone #: 01093567416
+SSN: 009678543
+ ","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,"Windows 11
+Chrome 3.6 / Fire "
+Req_ParaBank registration_002,ParaBank_TC_014,"Verify that the system shouldn't accept the valid required fields as mentioned in the requirments
+when the Address with more than 100 characters ","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","First Name: Sara
+Last Name: Nabil
+Address: 5 mohamed farag st branched from hasan talaat st beside the pharmacy in front of the italian resturaunt and the garden - zamalik - cairo
+City: Cairo
+State: Cairo
+Zip Code: 3526565
+Phone #: 01093567416
+SSN: 009678543
+ ","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,"Windows 11
+Chrome 3.6 / Fire "
+Req_ParaBank registration_002,ParaBank_TC_015,"Verify that the system shouldn't accept the valid required fields as mentioned in the requirments
+but the zip code more than 10 digits nor less than 5 digits.","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","First Name: Sara
+Last Name: Nabil
+Address: 5 mohamed farag st
+City: Cairo
+State: Cairo
+Zip Code: 123456 (less than 10 digits)  then 1234567891022 (more than 10 digits)
+Phone #: 01093567416
+SSN: 009678543
+ ","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,"Windows 11
+Chrome 3.6 / Fire "
+Req_ParaBank registration_002,ParaBank_TC_016,Verify that the system does not accept a mobile number with less than 10 digits and not more than 15 digits.,"1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","""First Name: Sara
+Last Name: Nabil
+Address: 5 mohamed farag st
+City: Cairo
+State: Cairo
+Zip Code: 3526565
+Phone #: 01093567 (less than 10 digits) then 01093567416789103 (more than 15 digits)
+SSN: 009678543
+ ","The system shouldn't accept the fields.
+The user should be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_017,Verify that the system does not accept a SSN other than 9 digits,"1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","""First Name: Sara
+Last Name: Nabil
+Address: 5 mohamed farag st
+City: Cairo
+State: Cairo
+Zip Code: 3526565
+Phone #: 01093567416
+SSN: 00986475 (8 digits) then 0099647554 (10 digits) then 009864758# (9 digits with special charactar)
+ ","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_018,"Verify that the system shows an error when the username field is left blank
+","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: (blank)
+Password: sara@456
+Confirm password: sara@456","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_019,"Verify that the system shows an error when the username is longer than 15 characters
+","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: saranabilaliramadan
+Password: sara@456
+Confirm password: sara@456","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_020,"Verify that the system shows an error when the username contains special characters
+","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: sara@456
+Password: sara@456
+Confirm password: sara@456","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_021,"Verify that the system shows an error when the username is not unique (already exists)
+","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: saraaa
+Password: sara@456
+Confirm password: sara@456","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_022,"Verify that the system shows an error when the password field is left blank
+","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: saranabil
+Password: (blank)
+Confirm password: (blank)","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_023,"Verify that the system shows an error when the password is less than 8 characters
+","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: saranabil
+Password: nabil
+Confirm password: nabil","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_024,Verify that the system accepts a valid password with 8 or more characters,"1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: saranabil
+Password: sara@45678
+Confirm Password: sara@45678","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_025,"Verify that the system shows an error when the password and confirm password do not excatly match
+","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: saranabil
+Password: sara@45678
+confirm password: sara45678","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_026,"Verify that the system shows an error when the confirm password field is left blank
+","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: saranabil
+Password: sara@45678
+confirm password: (blank)","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Req_ParaBank registration_002,ParaBank_TC_027,"Verify that the system accepts matching password and confirm password fields
+","1-Open the registration page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""register"" button.","Username: saranabil
+Password: sara@45678
+confirm password: sara@45678","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Transfer_funds_ParaBank_003,ParaBank_TC_028,Verify that the system accepts a numeric amount greater than 0 and different From and To accounts,"1-Open the transfer funds page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""transfer"" button.","Amount: 1
+From Account: Account A
+To Account: Account B
+ ","The system should accept the fields.
+The user should be navigated to the next page.",APPROVED,,
+Transfer_funds_ParaBank_003,ParaBank_TC_029,"Verify that the system rejects a non-numeric amount
+","1-Open the transfer funds page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""transfer"" button.","Amount: abc
+From Account: Account A
+To Account: Account B
+ ","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Transfer_funds_ParaBank_003,ParaBank_TC_030,"Verify that the system rejects an empty amount field
+","1-Open the transfer funds page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""transfer"" button.","Amount: (blank)
+From Account: Account A
+To Account: Account B","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Transfer_funds_ParaBank_003,ParaBank_TC_031,"Verify that the system rejects a zero value for the amount
+","1-Open the transfer funds page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""transfer"" button.","Amount: 0
+From Account: Account A
+To Account: Account B
+ ","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Transfer_funds_ParaBank_003,ParaBank_TC_032,Verify that the system rejects a negative amount,"1-Open the transfer funds page on ParaBank.2-Enter a valid data as mentioned in the requirments3-Click the ""transfer"" button.","Amount: -4
+From Account: Account A
+To Account: Account B","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Transfer_funds_ParaBank_003,ParaBank_TC_033,Verify that the system rejects identical From and To accounts,"1-Open the transfer funds page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""transfer"" button.","Amount: 100
+From Account: Account A
+To Account: Account A","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Transfer_funds_ParaBank_003,ParaBank_TC_034,"Verify that the system rejects an empty From account
+","1-Open the transfer funds page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""transfer"" button.","Amount: 100
+From Account: (blank)
+To Account: Account B","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Transfer_funds_ParaBank_003,ParaBank_TC_035,Verify that the system rejects an empty To account,"1-Open the transfer funds page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the ""transfer"" button.","Amount: 100
+From Account: Account A
+To Account: (blank)","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Open_New_Account_ParaBank_004,ParaBank_TC_036,"Verify that the system accepts a selected account type (Checking or Savings)
+","1-Open the open new account page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the button.","Account type: Checking
+Existing Account: saranabil","The system should accept the fields.
+The user should be navigated to the next page.",APPROVED,,
+Open_New_Account_ParaBank_004,ParaBank_TC_037,"Verify that the system does not accept when no account type is selected
+","1-Open the open new account page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the button.","Account type: (blank)
+Existing Account: saranabil","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
+Open_New_Account_ParaBank_004,ParaBank_TC_038,"Verify that the system rejects an invalid or non-existent account selection
+","1-Open the open new account page on ParaBank.
+2-Enter a valid data as mentioned in the requirments
+3-Click the button.","Account type: Checking
+Existing Account: njbfshvfh","The system shouldn't accept the fields.
+The user shouldn't be navigated to the next page.",APPROVED,,
